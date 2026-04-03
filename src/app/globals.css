@@ -16,11 +16,23 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading tracking-heading;
   }
+
+  ::selection {
+    @apply bg-accent/20 text-accent-900;
+  }
 }
 
 @layer components {
   .section-padding {
-    @apply py-24 md:py-32;
+    @apply py-20 md:py-28;
+  }
+
+  .glass {
+    @apply bg-white/80 backdrop-blur-xl border border-white/20;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent via-blue-500 to-accent bg-clip-text text-transparent;
   }
 }
 

@@ -4,6 +4,7 @@ export const navigation: NavigationConfig = {
   whatWeDo: [
     {
       title: 'Services',
+      href: '/services',
       items: [
         { label: 'Applications', href: '/services/applications' },
         { label: 'Cloud', href: '/services/cloud' },
@@ -20,6 +21,7 @@ export const navigation: NavigationConfig = {
     },
     {
       title: 'Industries',
+      href: '/industries',
       items: [
         { label: 'Banking & Financial Services', href: '/industries/banking-financial-services' },
         { label: 'Healthcare', href: '/industries/healthcare' },

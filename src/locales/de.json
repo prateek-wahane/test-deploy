@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "whatWeDo": "Was wir tun",
+    "whoWeAre": "Wer wir sind",
+    "careers": "Karriere",
+    "contactUs": "Kontakt",
+    "services": "Dienstleistungen",
+    "industries": "Branchen",
+    "menu": "Menü",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
+  },
+  "hero": {
+    "slides": [
+      {
+        "tagline": "Schneller entwickelt mit Agenten",
+        "headline": "KI-gestützte Lösungen\nfür Ihr Unternehmen",
+        "subtext": "Meisterung von Voice.ai, Konversations-Chatbots und agentischen Frameworks zur Beschleunigung Ihres Unternehmens.",
+        "ctas": ["Kontaktieren Sie uns", "Fallstudien lesen"]
+      },
+      {
+        "tagline": "Willkommen bei Intelliware Global",
+        "headline": "Erleben Sie\nbeschleunigtes Wachstum",
+        "subtext": "Wir verbinden menschenzentrierte Werte mit modernster digitaler Umsetzung, um Ihr globales Unternehmen zu stärken.",
+        "ctas": ["Wer wir sind", "Unsere Leistungen"]
+      },
+      {
+        "tagline": "Generative KI-Lösungen",
+        "headline": "Transformation mit\ngenerativer KI",
+        "subtext": "Nutzen Sie die Kraft der generativen KI, um innovative Lösungen zu schaffen und die digitale Transformation voranzutreiben.",
+        "ctas": ["GenAI entdecken", "Fallstudien"]
+      },
+      {
+        "tagline": "Teamzusammenarbeit",
+        "headline": "Starke Teams\ngemeinsam aufbauen",
+        "subtext": "Unser kollaborativer Ansatz bringt vielfältige Talente zusammen, um außergewöhnliche Ergebnisse für Ihr Unternehmen zu liefern.",
+        "ctas": ["Unser Team", "Mitmachen"]
+      },
+      {
+        "tagline": "Kundenerfolg",
+        "headline": "Nachhaltiges\nWachstum fördern",
+        "subtext": "Arbeiten Sie mit uns zusammen, um messbares Wachstum und nachhaltigen Erfolg durch innovative digitale Lösungen zu erzielen.",
+        "ctas": ["Unsere Wirkung", "Ihre Reise starten"]
+      }
+    ],
+    "trustBar": "Vertraut von Unternehmen in über 25 EMEA-Märkten"
+  },
+  "services": {
+    "sectionTitle": "Unsere Kernleistungen",
+    "sectionSubtitle": "Unternehmenstaugliche Technologielösungen für Skalierbarkeit, Sicherheit und Geschwindigkeit.",
+    "viewAll": "Alle Leistungen anzeigen",
+    "explore": "Entdecken",
+    "learnMore": "Mehr erfahren",
+    "getStarted": "Loslegen",
+    "pageTitle": "Unsere Leistungen",
+    "pageSubtitle": "Beschleunigen Sie Ihre Geschäftstransformation mit unserer umfassenden Palette an Technologieleistungen, die für Unternehmen in der EMEA-Region konzipiert sind.",
+    "gridTitle": "Unsere Kernleistungen",
+    "gridSubtitle": "Jede Leistung wird von unserem Team zertifizierter Experten mit tiefgreifender Branchenerfahrung erbracht.",
+    "ctaTitle": "Bereit für die Transformation Ihres Unternehmens?",
+    "ctaSubtitle": "Unser Team steht bereit, Ihre Herausforderungen zu besprechen und eine maßgeschneiderte Technologie-Roadmap zu erstellen.",
+    "ctaButton": "Beratung vereinbaren",
+    "items": {
+      "applications": "Anwendungen",
+      "cloud": "Cloud",
+      "cybersecurity": "Cybersicherheit",
+      "data-analytics": "Daten & Analytik",
+      "digital-transformation": "Digitale Transformation",
+      "enterprise-solutions": "Unternehmenslösungen",
+      "ai-machine-learning": "KI & ML",
+      "iot-edge-computing": "IoT & Edge",
+      "quality-engineering": "Qualitätssicherung",
+      "consulting": "Beratung",
+      "managed-services": "Managed Services"
+    }
+  },
+  "why": {
+    "sectionTitle": "Warum Intelliware Global",
+    "sectionSubtitle": "Die Überzeugung zu innovieren. Die Disziplin zu liefern.",
+    "innovation": "Innovation",
+    "innovationDesc": "Wir investieren in aufkommende Technologien — KI, Blockchain, Edge Computing — und verwandeln sie in produktionsreife Lösungen mit echtem ROI.",
+    "scale": "Skalierung",
+    "scaleDesc": "Mit Lieferzentren in London, Dubai und Bangalore bieten wir Follow-the-Sun-Support und globale Talentpools, die mit Ihren Ambitionen wachsen.",
+    "trust": "Vertrauen",
+    "trustDesc": "Wir arbeiten mit der Governance, Compliance-Strenge und Verantwortlichkeit eines Tier-1-Unternehmens — unterstützt durch gründergeführte persönliche Verantwortung.",
+    "enterpriseClients": "Unternehmenskunden",
+    "techProfessionals": "Technologieexperten",
+    "emeaMarkets": "Bediente EMEA-Märkte"
+  },
+  "industries": {
+    "sectionTitle": "Branchen, die wir bedienen",
+    "sectionSubtitle": "Tiefgreifende Branchenexpertise in den Sektoren, die die EMEA-Wirtschaft antreiben.",
+    "pageTitle": "Branchen, die wir bedienen",
+    "pageSubtitle": "Wir bringen tiefgreifende Branchenexpertise in den Bereichen Finanzdienstleistungen, Gesundheitswesen, Fertigung, Energie und darüber hinaus mit.",
+    "gridTitle": "Branchenexpertise",
+    "gridSubtitle": "Jede Branche wird von unseren Spezialisten betreut, die branchenspezifische Herausforderungen und regulatorische Anforderungen verstehen.",
+    "ctaTitle": "Lassen Sie uns Ihre Branchenherausforderungen angehen",
+    "ctaSubtitle": "Unsere branchenerfahrenen Teams sind bereit, Ihre einzigartigen Geschäftsanforderungen zu verstehen.",
+    "ctaButton": "Beratung vereinbaren",
+    "items": {
+      "banking-financial-services": "Banken",
+      "healthcare": "Gesundheitswesen",
+      "hi-tech": "Hi-Tech",
+      "insurance": "Versicherungen",
+      "life-sciences": "Biowissenschaften",
+      "manufacturing": "Fertigung",
+      "media-entertainment": "Medien & Unterhaltung",
+      "retail-cpg": "Handel & Konsumgüter",
+      "telecom": "Telekommunikation",
+      "energy-utilities": "Energie & Versorgung"
+    }
+  },
+  "globalPresence": {
+    "sectionTitle": "Globale Präsenz",
+    "sectionSubtitle": "Strategisch auf drei Kontinenten positioniert für Follow-the-Sun-Lieferung."
+  },
+  "cta": {
+    "title": "Bereit zur Transformation?",
+    "subtitle": "Arbeiten Sie mit Intelliware Global zusammen, um Ihre digitale Reise zu beschleunigen. Lassen Sie uns gemeinsam etwas Außergewöhnliches schaffen.",
+    "button": "Kontaktieren Sie uns"
+  },
+  "footer": {
+    "quickLinks": "Schnellzugriff",
+    "services": "Leistungen",
+    "industries": "Branchen",
+    "globalOffices": "Globale Büros",
+    "aboutUs": "Über uns",
+    "careers": "Karriere",
+    "gcc": "Globale Kompetenzzentren",
+    "contactUs": "Kontakt",
+    "copyright": "Intelliware Global Consulting and Services LLP. Alle Rechte vorbehalten."
+  },
+  "careers": {
+    "pageTitle": "Gestalten Sie Ihre Karriere bei uns",
+    "pageSubtitle": "Werden Sie Teil eines Teams außergewöhnlicher Technologen, die unternehmenstaugliche Lösungen in Europa, dem Nahen Osten und Indien liefern."
+  },
+  "contact": {
+    "pageTitle": "Kontakt",
+    "pageSubtitle": "Nehmen Sie Kontakt mit Intelliware Global auf. Büros in London, Dubai und Bangalore für Unternehmen in der EMEA-Region."
+  },
+  "common": {
+    "previous": "Zurück",
+    "next": "Weiter",
+    "goToSlide": "Zu Folie wechseln"
+  }
+}

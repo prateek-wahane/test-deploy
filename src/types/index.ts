@@ -5,6 +5,7 @@ export interface Service {
   description: string;
   longDescription: string;
   icon: string;
+  image?: string;
   pillars: ValuePillar[];
   techStack: string[];
 }
@@ -41,6 +42,7 @@ export interface NavItem {
 
 export interface MegaMenuColumn {
   title: string;
+  href?: string;
   items: NavItem[];
 }
 

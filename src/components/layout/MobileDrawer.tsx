@@ -6,15 +6,22 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronDown } from 'lucide-react';
 import { navigation } from '@/data/navigation';
 import LanguageSwitcher from './LanguageSwitcher';
+import { useTranslation } from '@/hooks/useTranslation';
 
 interface MobileDrawerProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
+function getSlugFromHref(href: string): string {
+  const parts = href.split('/');
+  return parts[parts.length - 1];
+}
+
 export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
   const [whatWeDoOpen, setWhatWeDoOpen] = useState(false);
   const [whoWeAreOpen, setWhoWeAreOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <AnimatePresence>
@@ -35,23 +42,22 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
             className="fixed top-0 end-0 h-full w-80 max-w-[85vw] bg-white z-50 overflow-y-auto"
           >
             <div className="flex items-center justify-between p-5 border-b border-slate-100">
-              <span className="text-lg font-heading font-bold text-slate-900">Menu</span>
+              <span className="text-lg font-heading font-bold text-slate-900">{t('nav.menu')}</span>
               <button
                 onClick={onClose}
                 className="p-2 rounded-md hover:bg-slate-50 text-slate-500"
-                aria-label="Close menu"
+                aria-label={t('nav.closeMenu')}
               >
                 <X className="h-5 w-5" />
               </button>
             </div>
 
             <nav className="p-5 space-y-1">
-              {/* What We Do */}
               <button
                 onClick={() => setWhatWeDoOpen(!whatWeDoOpen)}
                 className="flex w-full items-center justify-between rounded-md px-3 py-3 text-sm font-medium text-slate-700 hover:bg-slate-50"
               >
-                What We Do
+                {t('nav.whatWeDo')}
                 <ChevronDown
                   className={`h-4 w-4 text-slate-400 transition-transform ${whatWeDoOpen ? 'rotate-180' : ''}`}
                 />
@@ -64,33 +70,43 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
                     exit={{ height: 0, opacity: 0 }}
                     className="overflow-hidden"
                   >
-                    {navigation.whatWeDo.map((col) => (
-                      <div key={col.title} className="ps-4 mb-3">
-                        <p className="px-3 py-1 text-xs font-bold uppercase tracking-widest text-slate-900">
-                          {col.title}
-                        </p>
-                        {col.items.map((item) => (
+                    {navigation.whatWeDo.map((col) => {
+                      const sectionKey = col.title === 'Services' ? 'nav.services' : 'nav.industries';
+                      const itemsKey = col.title === 'Services' ? 'services.items' : 'industries.items';
+                      return (
+                        <div key={col.title} className="ps-4 mb-3">
                           <Link
-                            key={item.href}
-                            href={item.href}
+                            href={col.href || '#'}
                             onClick={onClose}
-                            className="block rounded-md px-3 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+                            className="block px-3 py-1 text-xs font-bold uppercase tracking-widest text-slate-900 hover:text-accent transition-colors"
                           >
-                            {item.label}
+                            {t(sectionKey)}
                           </Link>
-                        ))}
-                      </div>
-                    ))}
+                          {col.items.map((item) => {
+                            const slug = getSlugFromHref(item.href);
+                            return (
+                              <Link
+                                key={item.href}
+                                href={item.href}
+                                onClick={onClose}
+                                className="block rounded-md px-3 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+                              >
+                                {t(`${itemsKey}.${slug}`, item.label)}
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      );
+                    })}
                   </motion.div>
                 )}
               </AnimatePresence>
 
-              {/* Who We Are */}
               <button
                 onClick={() => setWhoWeAreOpen(!whoWeAreOpen)}
                 className="flex w-full items-center justify-between rounded-md px-3 py-3 text-sm font-medium text-slate-700 hover:bg-slate-50"
               >
-                Who We Are
+                {t('nav.whoWeAre')}
                 <ChevronDown
                   className={`h-4 w-4 text-slate-400 transition-transform ${whoWeAreOpen ? 'rotate-180' : ''}`}
                 />
@@ -124,7 +140,7 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
                 onClick={onClose}
                 className="block rounded-md px-3 py-3 text-sm font-medium text-slate-700 hover:bg-slate-50"
               >
-                Careers
+                {t('nav.careers')}
               </Link>
 
               <Link
@@ -132,7 +148,7 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
                 onClick={onClose}
                 className="block rounded-md px-3 py-3 text-sm font-medium text-slate-700 hover:bg-slate-50"
               >
-                Contact Us
+                {t('nav.contactUs')}
               </Link>
             </nav>
 

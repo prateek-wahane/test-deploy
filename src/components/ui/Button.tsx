@@ -15,11 +15,11 @@ interface ButtonProps extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'chi
 
 const variantStyles: Record<Variant, string> = {
   primary:
-    'bg-slate-900 text-white hover:bg-slate-800',
+    'bg-slate-900 text-white hover:bg-slate-800 shadow-sm hover:shadow-md',
   secondary:
-    'border border-slate-300 text-slate-700 hover:bg-slate-50',
+    'border border-slate-300 text-slate-700 hover:bg-slate-50 hover:border-slate-400',
   ghost:
-    'text-accent hover:text-accent-700 hover:bg-slate-50',
+    'text-accent hover:text-accent-700 hover:bg-accent/5',
 };
 
 export default function Button({
@@ -30,7 +30,7 @@ export default function Button({
   ...props
 }: ButtonProps) {
   const classes = cn(
-    'inline-flex items-center justify-center gap-2 rounded px-6 py-3 text-sm font-semibold font-body transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2 focus:ring-offset-white',
+    'inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold font-body transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2 focus:ring-offset-white',
     variantStyles[variant],
     className
   );

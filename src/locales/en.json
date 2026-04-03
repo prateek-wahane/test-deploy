@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "whatWeDo": "What We Do",
+    "whoWeAre": "Who We Are",
+    "careers": "Careers",
+    "contactUs": "Contact Us",
+    "services": "Services",
+    "industries": "Industries",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "slides": [
+      {
+        "tagline": "Built Faster with Agents",
+        "headline": "AI-Powered Solutions\nBuilt for Your Business",
+        "subtext": "Mastering Voice.ai, Conversational Chatbots, and Agentic Frameworks to accelerate your enterprise.",
+        "ctas": ["Let's Talk", "Read Case Studies"]
+      },
+      {
+        "tagline": "Welcome to Intelliware Global",
+        "headline": "Experience\nAccelerated Growth",
+        "subtext": "Bridging human-centric values with cutting-edge digital delivery to empower your global enterprise.",
+        "ctas": ["Discover Who We Are", "Our Services"]
+      },
+      {
+        "tagline": "Generative AI Solutions",
+        "headline": "Transform with\nGenerative AI",
+        "subtext": "Harness the power of generative AI to create innovative solutions and drive digital transformation.",
+        "ctas": ["Explore GenAI", "Case Studies"]
+      },
+      {
+        "tagline": "Team Collaboration",
+        "headline": "Building Strong\nTeams Together",
+        "subtext": "Our collaborative approach brings diverse talents together to deliver exceptional results for your business.",
+        "ctas": ["Meet Our Team", "Join Us"]
+      },
+      {
+        "tagline": "Customer Success",
+        "headline": "Drive Sustainable\nGrowth",
+        "subtext": "Partner with us to achieve measurable growth and lasting success through innovative digital solutions.",
+        "ctas": ["See Our Impact", "Start Your Journey"]
+      }
+    ],
+    "trustBar": "Trusted by enterprises across 25+ EMEA markets"
+  },
+  "services": {
+    "sectionTitle": "Our Core Services",
+    "sectionSubtitle": "Enterprise-grade technology solutions designed for scale, security, and speed.",
+    "viewAll": "View All Services",
+    "explore": "Explore",
+    "learnMore": "Learn more",
+    "getStarted": "Get Started",
+    "pageTitle": "Our Services",
+    "pageSubtitle": "Accelerate your business transformation with our comprehensive suite of technology services, architected for enterprises across EMEA. From cloud modernisation to AI-powered insights, we deliver outcomes that matter.",
+    "gridTitle": "Our Core Services",
+    "gridSubtitle": "Each service is delivered by our team of certified experts with deep industry experience and proven delivery methodologies.",
+    "ctaTitle": "Ready to Transform Your Business?",
+    "ctaSubtitle": "Our services team is ready to discuss your challenges and craft a technology roadmap tailored to your business goals.",
+    "ctaButton": "Schedule a Consultation",
+    "items": {
+      "applications": "Applications",
+      "cloud": "Cloud",
+      "cybersecurity": "Cybersecurity",
+      "data-analytics": "Data & Analytics",
+      "digital-transformation": "Digital Transformation",
+      "enterprise-solutions": "Enterprise Solutions",
+      "ai-machine-learning": "AI & ML",
+      "iot-edge-computing": "IoT & Edge",
+      "quality-engineering": "Quality Engineering",
+      "consulting": "Consulting",
+      "managed-services": "Managed Services"
+    }
+  },
+  "why": {
+    "sectionTitle": "Why Intelliware Global",
+    "sectionSubtitle": "The conviction to innovate. The discipline to deliver.",
+    "innovation": "Innovation",
+    "innovationDesc": "We invest in emerging technologies — AI, blockchain, edge computing — and turn them into production-grade solutions that deliver real ROI.",
+    "scale": "Scale",
+    "scaleDesc": "With delivery centres in London, Dubai, and Bangalore, we offer follow-the-sun support and global talent pools that scale with your ambitions.",
+    "trust": "Trust",
+    "trustDesc": "We operate with the governance, compliance rigour, and accountability of a Tier 1 firm — backed by founder-led personal ownership.",
+    "enterpriseClients": "Enterprise Clients",
+    "techProfessionals": "Technology Professionals",
+    "emeaMarkets": "EMEA Markets Served"
+  },
+  "industries": {
+    "sectionTitle": "Industries We Serve",
+    "sectionSubtitle": "Deep domain expertise across the sectors that power the EMEA economy.",
+    "pageTitle": "Industries We Serve",
+    "pageSubtitle": "We bring deep domain expertise across financial services, healthcare, manufacturing, energy, and beyond. Our industry-focused approach ensures solutions that address your unique business challenges.",
+    "gridTitle": "Vertical Expertise",
+    "gridSubtitle": "Each industry vertical is served by our specialists who understand sector-specific challenges, regulatory requirements, and market dynamics.",
+    "ctaTitle": "Let's Address Your Industry Challenges",
+    "ctaSubtitle": "Our industry-experienced teams are ready to understand your unique business needs and craft solutions that drive measurable impact.",
+    "ctaButton": "Schedule a Consultation",
+    "items": {
+      "banking-financial-services": "Banking",
+      "healthcare": "Healthcare",
+      "hi-tech": "Hi-Tech",
+      "insurance": "Insurance",
+      "life-sciences": "Life Sciences",
+      "manufacturing": "Manufacturing",
+      "media-entertainment": "Media & Entertainment",
+      "retail-cpg": "Retail & CPG",
+      "telecom": "Telecom",
+      "energy-utilities": "Energy & Utilities"
+    }
+  },
+  "globalPresence": {
+    "sectionTitle": "Global Presence",
+    "sectionSubtitle": "Strategically positioned across three continents for follow-the-sun delivery."
+  },
+  "cta": {
+    "title": "Ready to Transform?",
+    "subtitle": "Partner with Intelliware Global to accelerate your digital journey. Let's build something extraordinary together.",
+    "button": "Get In Touch"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "industries": "Industries",
+    "globalOffices": "Global Offices",
+    "aboutUs": "About Us",
+    "careers": "Careers",
+    "gcc": "Global Capability Centers",
+    "contactUs": "Contact Us",
+    "copyright": "Intelliware Global Consulting and Services LLP. All Rights Reserved."
+  },
+  "careers": {
+    "pageTitle": "Build Your Career With Us",
+    "pageSubtitle": "Join a team of exceptional technologists delivering enterprise-grade solutions across Europe, the Middle East, and India. We invest in your growth as much as our clients' success."
+  },
+  "contact": {
+    "pageTitle": "Contact Us",
+    "pageSubtitle": "Get in touch with Intelliware Global. Offices in London, Dubai, and Bangalore serving enterprises across EMEA."
+  },
+  "common": {
+    "previous": "Previous",
+    "next": "Next",
+    "goToSlide": "Go to slide"
+  }
+}

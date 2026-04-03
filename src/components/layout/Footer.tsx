@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Facebook,
   Linkedin,
@@ -14,13 +15,7 @@ import { industries } from '@/data/industries';
 import { offices } from '@/data/offices';
 import LiveClock from '@/components/ui/LiveClock';
 import Container from '@/components/ui/Container';
-
-const quickLinks = [
-  { label: 'About Us', href: '/about/about-us' },
-  { label: 'Careers', href: '/careers' },
-  { label: 'Global Capability Centers', href: '/about/about-us' },
-  { label: 'Contact Us', href: '/contact' },
-];
+import { useTranslation } from '@/hooks/useTranslation';
 
 const socials = [
   { icon: Facebook, href: '#', label: 'Facebook' },
@@ -31,21 +26,32 @@ const socials = [
 ];
 
 export default function Footer() {
+  const { t } = useTranslation();
+
+  const quickLinks = [
+    { label: t('footer.aboutUs'), href: '/about/about-us' },
+    { label: t('footer.careers'), href: '/careers' },
+    { label: t('footer.gcc'), href: '/about/about-us' },
+    { label: t('footer.contactUs'), href: '/contact' },
+  ];
+
   return (
-    <footer className="border-t border-slate-100 bg-slate-50">
+    <footer className="border-t border-slate-200/60 bg-slate-50">
       <Container className="section-padding">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-          {/* Column 1: Quick Links */}
           <div>
+            <div className="mb-6">
+              <Image src="/logo.png" alt="Intelliware Global" width={160} height={40} />
+            </div>
             <h3 className="mb-5 text-xs font-semibold uppercase tracking-widest text-slate-900">
-              Quick Links
+              {t('footer.quickLinks')}
             </h3>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.href + link.label}>
                   <Link
                     href={link.href}
-                    className="text-sm text-slate-500 transition-colors hover:text-slate-900"
+                    className="text-sm text-slate-500 transition-colors hover:text-accent"
                   >
                     {link.label}
                   </Link>
@@ -54,48 +60,45 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 2: Services */}
           <div>
             <h3 className="mb-5 text-xs font-semibold uppercase tracking-widest text-slate-900">
-              Services
+              {t('footer.services')}
             </h3>
             <ul className="space-y-3">
               {services.map((s) => (
                 <li key={s.slug}>
                   <Link
                     href={`/services/${s.slug}`}
-                    className="text-sm text-slate-500 transition-colors hover:text-slate-900"
+                    className="text-sm text-slate-500 transition-colors hover:text-accent"
                   >
-                    {s.shortTitle}
+                    {t(`services.items.${s.slug}`, s.shortTitle)}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Column 3: Industries */}
           <div>
             <h3 className="mb-5 text-xs font-semibold uppercase tracking-widest text-slate-900">
-              Industries
+              {t('footer.industries')}
             </h3>
             <ul className="space-y-3">
               {industries.map((ind) => (
                 <li key={ind.slug}>
                   <Link
                     href={`/industries/${ind.slug}`}
-                    className="text-sm text-slate-500 transition-colors hover:text-slate-900"
+                    className="text-sm text-slate-500 transition-colors hover:text-accent"
                   >
-                    {ind.shortTitle}
+                    {t(`industries.items.${ind.slug}`, ind.shortTitle)}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Column 4: Contact & Global */}
           <div>
             <h3 className="mb-5 text-xs font-semibold uppercase tracking-widest text-slate-900">
-              Global Offices
+              {t('footer.globalOffices')}
             </h3>
             <div className="space-y-5">
               {offices.map((office) => (
@@ -124,21 +127,19 @@ export default function Footer() {
         </div>
       </Container>
 
-      {/* Bottom Bar */}
       <div className="border-t border-slate-200">
         <Container className="flex flex-col items-center justify-between gap-4 py-6 sm:flex-row">
           <p className="text-xs text-slate-400">
-            &copy; {new Date().getFullYear()} Intelliware Global Consulting and
-            Services LLP. All Rights Reserved.
+            &copy; {new Date().getFullYear()} {t('footer.copyright')}
           </p>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
             {socials.map((social) => (
               <a
                 key={social.label}
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-md p-2 text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-700"
+                className="rounded-lg p-2 text-slate-400 transition-all hover:bg-accent/10 hover:text-accent"
                 aria-label={social.label}
               >
                 <social.icon className="h-4 w-4" strokeWidth={1.5} />

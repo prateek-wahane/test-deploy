@@ -22,19 +22,37 @@ const config: Config = {
           800: '#1E3A8A',
           900: '#172554',
         },
+        gold: {
+          DEFAULT: '#D97706',
+          50: '#FFFBEB',
+          100: '#FEF3C7',
+          200: '#FDE68A',
+          300: '#FCD34D',
+          400: '#FBBF24',
+          500: '#D97706',
+          600: '#B45309',
+        },
       },
       fontFamily: {
         heading: ['var(--font-outfit)', 'Outfit', 'sans-serif'],
         body: ['var(--font-ibm)', 'IBM Plex Sans', 'sans-serif'],
       },
       letterSpacing: {
-        'heading': '-0.03em',
+        heading: '-0.03em',
+      },
+      borderRadius: {
+        '2xl': '1rem',
+        '3xl': '1.5rem',
+      },
+      boxShadow: {
+        'glow': '0 0 20px rgba(37, 99, 235, 0.15)',
+        'glow-lg': '0 0 40px rgba(37, 99, 235, 0.15)',
       },
       animation: {
-        'marquee': 'marquee 30s linear infinite',
+        marquee: 'marquee 30s linear infinite',
         'marquee-reverse': 'marquee-reverse 30s linear infinite',
         'pulse-slow': 'pulse 3s ease-in-out infinite',
-        'float': 'float 6s ease-in-out infinite',
+        float: 'float 6s ease-in-out infinite',
       },
       keyframes: {
         marquee: {
