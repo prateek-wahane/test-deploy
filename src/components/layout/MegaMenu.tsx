@@ -35,7 +35,7 @@ export default function MegaMenu({ isOpen }: MegaMenuProps) {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -4 }}
           transition={{ duration: 0.2 }}
-          className="absolute start-0 top-full w-full bg-white/98 backdrop-blur-xl z-50 border-t border-slate-100 shadow-xl shadow-slate-200/30"
+          className="absolute start-0 top-full w-full bg-white z-50 border-t border-slate-100 shadow-xl shadow-slate-200/30"
         >
           <div className="h-0.5 bg-gradient-to-r from-accent via-accent/60 to-transparent" />
           <div className="mx-auto max-w-7xl px-6 py-8">

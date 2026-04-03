@@ -48,10 +48,10 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 start-0 end-0 z-50 transition-all duration-500 ${
+      className={`sticky top-0 start-0 end-0 z-50 transition-all duration-500 bg-white ${
         scrolled
-          ? 'bg-white/95 backdrop-blur-xl border-b border-slate-200/60 shadow-sm shadow-slate-200/50'
-          : 'bg-white/80 backdrop-blur-md border-b border-transparent'
+          ? 'border-b border-slate-200/60 shadow-sm shadow-slate-200/50'
+          : 'border-b border-slate-100'
       }`}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -109,7 +109,7 @@ export default function Header() {
 
           <Link
             href="/contact"
-            className="rounded-lg px-4 py-2 text-sm font-semibold font-heading text-accent hover:bg-accent hover:text-white transition-all duration-200"
+            className="rounded-lg px-4 py-2 text-sm font-semibold font-heading text-slate-700 hover:text-accent hover:bg-accent/5 transition-all duration-200"
           >
             {t('nav.contactUs')}
           </Link>

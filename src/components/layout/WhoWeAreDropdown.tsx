@@ -17,7 +17,7 @@ export default function WhoWeAreDropdown({ isOpen }: WhoWeAreDropdownProps) {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -4 }}
           transition={{ duration: 0.2 }}
-          className="absolute start-0 top-full min-w-[220px] bg-white/98 backdrop-blur-xl rounded-xl z-50 overflow-hidden border border-slate-200/60 shadow-xl shadow-slate-200/30"
+          className="absolute start-0 top-full min-w-[220px] bg-white rounded-xl z-50 overflow-hidden border border-slate-200/60 shadow-xl shadow-slate-200/30"
         >
           <div className="h-0.5 bg-gradient-to-r from-accent to-accent/30" />
           <ul className="py-2">
