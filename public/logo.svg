@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="72" viewBox="0 0 360 72" role="img" aria-labelledby="title">
+  <title id="title">Intelliware Global</title>
+  <rect width="100%" height="100%" fill="transparent" />
+  <!-- Simple mark -->
+  <g transform="translate(8,8)">
+    <g>
+      <circle cx="22" cy="22" r="8" fill="#0aa1df" />
+      <rect x="10" y="34" width="24" height="8" rx="3" fill="#ff6a00" />
+      <rect x="34" y="34" width="24" height="8" rx="3" fill="#ffc400" />
+    </g>
+  </g>
+  <!-- Wordmark -->
+  <g transform="translate(72,44)">
+    <text x="0" y="0" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="20" fill="#1f2937">INTELLIWARE</text>
+    <text x="0" y="22" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="20" fill="#1f2937">GLOBAL</text>
+  </g>
+</svg>
