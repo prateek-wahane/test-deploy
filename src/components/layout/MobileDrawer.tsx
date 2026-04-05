@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ChevronDown } from 'lucide-react';
+import { X, ChevronDown, ExternalLink } from 'lucide-react';
 import { navigation } from '@/data/navigation';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useTranslation } from '@/hooks/useTranslation';
@@ -21,6 +21,7 @@ function getSlugFromHref(href: string): string {
 export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
   const [whatWeDoOpen, setWhatWeDoOpen] = useState(false);
   const [whoWeAreOpen, setWhoWeAreOpen] = useState(false);
+  const [portfolioOpen, setPortfolioOpen] = useState(false);
   const { t } = useTranslation();
 
   return (
@@ -129,6 +130,43 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
                         >
                           {item.label}
                         </Link>
+                      ))}
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+              {/* Portfolio */}
+              <button
+                onClick={() => setPortfolioOpen(!portfolioOpen)}
+                className="flex w-full items-center justify-between rounded-md px-3 py-3 text-sm font-medium text-slate-700 hover:bg-slate-50"
+              >
+                {t('nav.portfolio')}
+                <ChevronDown
+                  className={`h-4 w-4 text-slate-400 transition-transform ${portfolioOpen ? 'rotate-180' : ''}`}
+                />
+              </button>
+              <AnimatePresence>
+                {portfolioOpen && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: 'auto', opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    className="overflow-hidden"
+                  >
+                    <div className="ps-4">
+                      {navigation.portfolio.map((item) => (
+                        <a
+                          key={item.href}
+                          href={item.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={onClose}
+                          className="flex items-center justify-between rounded-md px-3 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+                        >
+                          {item.label}
+                          <ExternalLink className="h-3.5 w-3.5 text-slate-400" />
+                        </a>
                       ))}
                     </div>
                   </motion.div>

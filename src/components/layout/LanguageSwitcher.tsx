@@ -10,6 +10,7 @@ const languages = [
   { code: 'fr' as const, label: 'FR', name: 'Français' },
   { code: 'de' as const, label: 'DE', name: 'Deutsch' },
   { code: 'ar' as const, label: 'AR', name: 'العربية' },
+  { code: 'es' as const, label: 'ES', name: 'Español' },
 ];
 
 export default function LanguageSwitcher() {

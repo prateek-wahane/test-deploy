@@ -2,9 +2,9 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import * as Icons from 'lucide-react';
 import { ArrowRight } from 'lucide-react';
 import { industries } from '@/data/industries';
+import { getIcon } from '@/lib/icons';
 import Container from '@/components/ui/Container';
 import SectionHeading from '@/components/ui/SectionHeading';
 import { useTranslation } from '@/hooks/useTranslation';
@@ -22,7 +22,7 @@ export default function IndustriesStrip() {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {industries.map((ind, i) => {
-            const Icon = (Icons as unknown as Record<string, Icons.LucideIcon>)[ind.icon] || Icons.Box;
+            const Icon = getIcon(ind.icon);
             return (
               <motion.div
                 key={ind.slug}

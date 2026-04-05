@@ -1,15 +1,14 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import * as Icons from 'lucide-react';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { services } from '@/data/services';
 import Container from '@/components/ui/Container';
-import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import { useTranslation } from '@/hooks/useTranslation';
+import { getIcon } from '@/lib/icons';
 
 export default function ServicesPage() {
   const { t } = useTranslation();
@@ -58,7 +57,7 @@ export default function ServicesPage() {
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => {
-              const ServiceIcon = (Icons as unknown as Record<string, Icons.LucideIcon>)[service.icon] || Icons.Box;
+              const ServiceIcon = getIcon(service.icon);
 
               return (
                 <motion.div

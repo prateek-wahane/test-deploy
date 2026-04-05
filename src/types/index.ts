@@ -38,6 +38,7 @@ export interface Office {
 export interface NavItem {
   label: string;
   href: string;
+  external?: boolean;
 }
 
 export interface MegaMenuColumn {
@@ -49,6 +50,7 @@ export interface MegaMenuColumn {
 export interface NavigationConfig {
   whatWeDo: MegaMenuColumn[];
   whoWeAre: NavItem[];
+  portfolio: NavItem[];
   careers: NavItem;
   contact: NavItem;
 }

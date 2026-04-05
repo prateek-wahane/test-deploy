@@ -1,20 +1,20 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import * as Icons from 'lucide-react';
 import { ArrowRight } from 'lucide-react';
 import type { Service } from '@/types';
 import Container from '@/components/ui/Container';
 import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import Marquee from '@/components/ui/Marquee';
+import { getIcon } from '@/lib/icons';
 
 interface Props {
   service: Service;
 }
 
 export default function ServiceDetail({ service }: Props) {
-  const Icon = (Icons as unknown as Record<string, Icons.LucideIcon>)[service.icon] || Icons.Box;
+  const Icon = getIcon(service.icon);
 
   return (
     <>
@@ -47,7 +47,7 @@ export default function ServiceDetail({ service }: Props) {
           </h2>
           <div className="grid gap-6 md:grid-cols-3">
             {service.pillars.map((pillar, i) => {
-              const PillarIcon = (Icons as unknown as Record<string, Icons.LucideIcon>)[pillar.icon] || Icons.Box;
+              const PillarIcon = getIcon(pillar.icon);
               return (
                 <motion.div
                   key={pillar.title}

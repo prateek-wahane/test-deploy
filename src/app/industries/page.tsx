@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import * as Icons from 'lucide-react';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { industries } from '@/data/industries';
@@ -9,6 +8,7 @@ import Container from '@/components/ui/Container';
 import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import { useTranslation } from '@/hooks/useTranslation';
+import { getIcon } from '@/lib/icons';
 
 export default function IndustriesPage() {
   const { t } = useTranslation();
@@ -57,7 +57,7 @@ export default function IndustriesPage() {
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {industries.map((industry, index) => {
-              const IndustryIcon = (Icons as unknown as Record<string, Icons.LucideIcon>)[industry.icon] || Icons.Box;
+              const IndustryIcon = getIcon(industry.icon);
 
               return (
                 <motion.div

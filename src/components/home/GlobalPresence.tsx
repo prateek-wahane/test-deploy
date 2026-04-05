@@ -10,7 +10,10 @@ import { useTranslation } from '@/hooks/useTranslation';
 const locations = [
   { city: 'London', top: '28%', left: '47%', timezone: 'Europe/London', label: 'GMT/BST' },
   { city: 'Dubai', top: '45%', left: '60%', timezone: 'Asia/Dubai', label: 'GST' },
-  { city: 'Bangalore', top: '52%', left: '68%', timezone: 'Asia/Kolkata', label: 'IST' },
+  { city: 'Bangalore', top: '55%', left: '68%', timezone: 'Asia/Kolkata', label: 'IST' },
+  { city: 'Pune', top: '50%', left: '65%', timezone: 'Asia/Kolkata', label: 'IST' },
+  { city: 'Hyderabad', top: '52%', left: '67%', timezone: 'Asia/Kolkata', label: 'IST' },
+  { city: 'Mumbai', top: '49%', left: '64%', timezone: 'Asia/Kolkata', label: 'IST' },
 ];
 
 export default function GlobalPresence() {
@@ -48,7 +51,6 @@ export default function GlobalPresence() {
                 {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
                   <line key={`v${i}`} x1={100 + i * 80} y1="0" x2={100 + i * 80} y2="400" stroke="#94A3B8" strokeWidth="0.3" opacity="0.2" />
                 ))}
-                {/* Connection lines between offices */}
                 <line x1="376" y1="112" x2="480" y2="164" stroke="#2563EB" strokeWidth="0.8" opacity="0.3" strokeDasharray="4 3" />
                 <line x1="480" y1="164" x2="544" y2="188" stroke="#2563EB" strokeWidth="0.8" opacity="0.3" strokeDasharray="4 3" />
                 <line x1="376" y1="112" x2="544" y2="188" stroke="#2563EB" strokeWidth="0.8" opacity="0.15" strokeDasharray="4 3" />
@@ -60,24 +62,24 @@ export default function GlobalPresence() {
                   className="absolute"
                   style={{ top: loc.top, left: loc.left, transform: 'translate(-50%, -50%)' }}
                 >
-                  <PulsingDot size="md" label={loc.city} />
+                  <PulsingDot size="sm" label={loc.city} />
                 </div>
               ))}
             </div>
           </motion.div>
 
-          <div className="space-y-4">
+          <div className="space-y-3 max-h-[500px] overflow-y-auto">
             {locations.map((loc, i) => (
               <motion.div
                 key={loc.city}
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.15, duration: 0.4 }}
-                className="rounded-2xl border border-slate-200/60 bg-white p-5 shadow-sm"
+                transition={{ delay: i * 0.1, duration: 0.4 }}
+                className="rounded-2xl border border-slate-200/60 bg-white p-4 shadow-sm"
               >
-                <div className="flex items-center justify-between mb-2">
-                  <h4 className="font-heading font-semibold text-slate-900">{loc.city}</h4>
+                <div className="flex items-center justify-between mb-1">
+                  <h4 className="font-heading font-semibold text-slate-900 text-sm">{loc.city}</h4>
                   <span className="text-xs text-slate-400 font-medium">{loc.label}</span>
                 </div>
                 <LiveClock timezone={loc.timezone} label={loc.label} />

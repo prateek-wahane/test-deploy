@@ -6,19 +6,19 @@ import en from '@/locales/en.json';
 import de from '@/locales/de.json';
 import fr from '@/locales/fr.json';
 import ar from '@/locales/ar.json';
+import es from '@/locales/es.json';
 
 type Translations = typeof en;
-type Language = 'en' | 'fr' | 'de' | 'ar';
 
-const dictionaries: Record<Language, Translations> = { en, de, fr, ar };
+const dictionaries: Record<string, Translations> = { en, de, fr, ar, es };
 
-function getNestedValue(obj: unknown, path: string): string {
+function getNestedValue(obj: unknown, path: string): unknown {
   return path.split('.').reduce<unknown>((acc, key) => {
     if (acc && typeof acc === 'object' && key in (acc as Record<string, unknown>)) {
       return (acc as Record<string, unknown>)[key];
     }
-    return path;
-  }, obj) as string;
+    return undefined;
+  }, obj);
 }
 
 export function useTranslation() {
@@ -34,5 +34,12 @@ export function useTranslation() {
     [dict]
   );
 
-  return { t, language };
+  const tRaw = useCallback(
+    (key: string): unknown => {
+      return getNestedValue(dict, key);
+    },
+    [dict]
+  );
+
+  return { t, tRaw, language };
 }

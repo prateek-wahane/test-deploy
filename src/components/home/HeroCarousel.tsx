@@ -82,7 +82,7 @@ const trustItems = [
 export default function HeroCarousel() {
   const [current, setCurrent] = useState(0);
   const [paused, setPaused] = useState(false);
-  const { t, language } = useTranslation();
+  const { t, tRaw, language } = useTranslation();
 
   const next = useCallback(() => {
     setCurrent((prev) => (prev + 1) % slides.length);
@@ -98,14 +98,15 @@ export default function HeroCarousel() {
     return () => clearInterval(timer);
   }, [paused, next]);
 
-  const translatedSlides = (t('hero.slides') as unknown) as Array<{
+  const rawSlides = tRaw('hero.slides');
+  const translatedSlides = rawSlides as Array<{
     tagline: string;
     headline: string;
     subtext: string;
     ctas: string[];
   }>;
 
-  const useTranslated = language !== 'en' && Array.isArray(translatedSlides);
+  const useTranslated = language !== 'en' && Array.isArray(rawSlides);
 
   const currentTagline = useTranslated
     ? translatedSlides[current]?.tagline

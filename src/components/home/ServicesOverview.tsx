@@ -3,12 +3,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import * as Icons from 'lucide-react';
 import { ArrowRight } from 'lucide-react';
 import { services } from '@/data/services';
 import Container from '@/components/ui/Container';
 import SectionHeading from '@/components/ui/SectionHeading';
 import { useTranslation } from '@/hooks/useTranslation';
+import { getIcon } from '@/lib/icons';
 
 const featured = services.slice(0, 6);
 
@@ -25,7 +25,7 @@ export default function ServicesOverview() {
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {featured.map((service, i) => {
-            const Icon = (Icons as unknown as Record<string, Icons.LucideIcon>)[service.icon] || Icons.Box;
+            const Icon = getIcon(service.icon);
             return (
               <motion.div
                 key={service.slug}
