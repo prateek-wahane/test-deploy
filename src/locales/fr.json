@@ -8,7 +8,8 @@
     "industries": "Industries",
     "menu": "Menu",
     "openMenu": "Ouvrir le menu",
-    "closeMenu": "Fermer le menu"
+    "closeMenu": "Fermer le menu",
+    "portfolio": "Portefeuille"
   },
   "hero": {
     "slides": [

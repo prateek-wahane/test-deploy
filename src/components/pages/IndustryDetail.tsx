@@ -1,19 +1,19 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import * as Icons from 'lucide-react';
 import { ArrowRight, AlertTriangle, CheckCircle2 } from 'lucide-react';
 import type { Industry } from '@/types';
 import Container from '@/components/ui/Container';
 import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
+import { getIcon } from '@/lib/icons';
 
 interface Props {
   industry: Industry;
 }
 
 export default function IndustryDetail({ industry }: Props) {
-  const Icon = (Icons as unknown as Record<string, Icons.LucideIcon>)[industry.icon] || Icons.Box;
+  const Icon = getIcon(industry.icon);
 
   return (
     <>

@@ -43,6 +43,9 @@ export const navigation: NavigationConfig = {
     { label: 'Values', href: '/about/values' },
     { label: 'Leadership', href: '/about/leadership' },
   ],
+  portfolio: [
+    { label: 'Wipro', href: 'https://www.wipro.com', external: true },
+  ],
   careers: { label: 'Careers', href: '/careers' },
   contact: { label: 'Contact Us', href: '/contact' },
 };

@@ -44,7 +44,7 @@ export const services: Service[] = [
     longDescription:
       'In an era of sophisticated cyber threats, Intelliware Global provides a defence-in-depth approach to enterprise security. We design and implement zero-trust architectures, deploy SIEM/SOAR platforms, and conduct red-team assessments to identify vulnerabilities before adversaries do. Our GRC practice ensures full alignment with GDPR, NIS2, and regional EMEA compliance mandates.',
     icon: 'Shield',
-    image: 'https://images.unsplash.com/photo-1563986768609-322da13575f2?w=800&q=80&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80&auto=format&fit=crop',
     pillars: [
       { title: 'Efficiency', description: 'Automated threat detection and response that reduces mean-time-to-remediate by 60%.', icon: 'Zap' },
       { title: 'Scalability', description: 'Cloud-native security platforms that protect workloads across hybrid and multi-cloud estates.', icon: 'TrendingUp' },

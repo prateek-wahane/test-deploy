@@ -3,7 +3,7 @@
 import { createContext, useContext, useState, useCallback, type ReactNode } from 'react';
 
 type Direction = 'ltr' | 'rtl';
-type Language = 'en' | 'fr' | 'de' | 'ar';
+type Language = 'en' | 'fr' | 'de' | 'ar' | 'es';
 
 interface DirectionContextType {
   direction: Direction;

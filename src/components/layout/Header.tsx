@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { Menu, ChevronDown } from 'lucide-react';
 import MegaMenu from './MegaMenu';
 import WhoWeAreDropdown from './WhoWeAreDropdown';
+import PortfolioDropdown from './PortfolioDropdown';
 import LanguageSwitcher from './LanguageSwitcher';
 import MobileDrawer from './MobileDrawer';
 import { useTranslation } from '@/hooks/useTranslation';
@@ -13,12 +14,14 @@ import { useTranslation } from '@/hooks/useTranslation';
 export default function Header() {
   const [megaOpen, setMegaOpen] = useState(false);
   const [whoOpen, setWhoOpen] = useState(false);
+  const [portfolioOpen, setPortfolioOpen] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { t } = useTranslation();
 
   const megaTimeout = useRef<NodeJS.Timeout | null>(null);
   const whoTimeout = useRef<NodeJS.Timeout | null>(null);
+  const portfolioTimeout = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -29,6 +32,7 @@ export default function Header() {
   function openMega() {
     if (megaTimeout.current) clearTimeout(megaTimeout.current);
     setWhoOpen(false);
+    setPortfolioOpen(false);
     setMegaOpen(true);
   }
 
@@ -39,11 +43,23 @@ export default function Header() {
   function openWho() {
     if (whoTimeout.current) clearTimeout(whoTimeout.current);
     setMegaOpen(false);
+    setPortfolioOpen(false);
     setWhoOpen(true);
   }
 
   function closeWho() {
     whoTimeout.current = setTimeout(() => setWhoOpen(false), 150);
+  }
+
+  function openPortfolio() {
+    if (portfolioTimeout.current) clearTimeout(portfolioTimeout.current);
+    setMegaOpen(false);
+    setWhoOpen(false);
+    setPortfolioOpen(true);
+  }
+
+  function closePortfolio() {
+    portfolioTimeout.current = setTimeout(() => setPortfolioOpen(false), 150);
   }
 
   return (
@@ -78,6 +94,7 @@ export default function Header() {
               {t('nav.whatWeDo')}
               <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${megaOpen ? 'rotate-180' : ''}`} />
             </button>
+            <MegaMenu isOpen={megaOpen} />
           </div>
 
           <span className="h-4 w-px bg-slate-200 transition-colors duration-300" />
@@ -94,6 +111,22 @@ export default function Header() {
               <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${whoOpen ? 'rotate-180' : ''}`} />
             </button>
             <WhoWeAreDropdown isOpen={whoOpen} />
+          </div>
+
+          <span className="h-4 w-px bg-slate-200 transition-colors duration-300" />
+
+          <div
+            className="relative"
+            onMouseEnter={openPortfolio}
+            onMouseLeave={closePortfolio}
+          >
+            <button
+              className="flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-semibold font-heading text-slate-700 hover:text-accent hover:bg-accent/5 transition-all duration-200"
+            >
+              {t('nav.portfolio')}
+              <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${portfolioOpen ? 'rotate-180' : ''}`} />
+            </button>
+            <PortfolioDropdown isOpen={portfolioOpen} />
           </div>
 
           <span className="h-4 w-px bg-slate-200 transition-colors duration-300" />
@@ -127,13 +160,6 @@ export default function Header() {
             <Menu className="h-5 w-5" />
           </button>
         </div>
-      </div>
-
-      <div
-        onMouseEnter={openMega}
-        onMouseLeave={closeMega}
-      >
-        <MegaMenu isOpen={megaOpen} />
       </div>
 
       <MobileDrawer isOpen={drawerOpen} onClose={() => setDrawerOpen(false)} />
