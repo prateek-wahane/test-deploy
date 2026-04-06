@@ -3,9 +3,18 @@ import CareersBoard from '@/components/pages/CareersBoard';
 import Container from '@/components/ui/Container';
 
 export const metadata: Metadata = {
-  title: 'Careers',
+  title: 'Careers — Join Intelliware Global',
   description:
-    'Join Intelliware Global. Explore career opportunities across our offices in London, Dubai, and Bangalore.',
+    'Explore career opportunities at Intelliware Global. Join 500+ technology professionals delivering enterprise solutions across London, Dubai, Bangalore, Pune, Hyderabad, and Mumbai.',
+  alternates: {
+    canonical: 'https://www.intelliwareglobal.com/careers',
+  },
+  openGraph: {
+    title: 'Careers — Join Intelliware Global',
+    description:
+      'Build your career with a next-generation technology consulting firm. Opportunities across Europe, Middle East, and India.',
+    url: 'https://www.intelliwareglobal.com/careers',
+  },
 };
 
 export default function CareersPage() {

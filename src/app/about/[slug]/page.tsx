@@ -18,6 +18,14 @@ export function generateMetadata({ params }: Props): Metadata {
   return {
     title: page.title,
     description: page.subtitle,
+    alternates: {
+      canonical: `https://www.intelliwareglobal.com/about/${page.slug}`,
+    },
+    openGraph: {
+      title: `${page.title} — Intelliware Global`,
+      description: page.subtitle,
+      url: `https://www.intelliwareglobal.com/about/${page.slug}`,
+    },
   };
 }
 
