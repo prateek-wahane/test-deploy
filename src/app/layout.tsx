@@ -82,7 +82,7 @@ export const metadata: Metadata = {
   },
   verification: {
     // Add your Google Search Console verification code here
-     google: 'googlec72a950914f1bc7f.html',
+    // google: 'your-google-verification-code',
   },
 };
 
