@@ -67,16 +67,25 @@ export const aboutPages: AboutPage[] = [
 ];
 
 export const leadershipTeam: LeadershipMember[] = [
-  {
+ {
     name: 'Ankit A.',
     role: 'Co-Founder',
-    bio:  'As Co-Founder of Intelliware Global, Ankit brings 15+ years of experience leading large-scale transformation initiatives across AI/ML, cloud, platform engineering, and enterprise technology. He has helped organisations modernise core systems, adopt scalable digital platforms, and build resilient engineering capabilities that support long-term growth. Ankit shapes the firm’s technology strategy, innovation agenda, and consulting methodology, ensuring Intelliware Global delivers enterprise-grade solutions with founder-led accountability. Ankit is also deeply involved in developing the company’s talent, culture, and leadership capability, building teams that combine technical depth with execution excellence.',
-    
+    bio: 'As Co-Founder of Intelliware Global, Ankit brings 15+ years of experience leading large-scale transformation initiatives across AI/ML, cloud, platform engineering, and enterprise technology. He has helped organisations modernise core systems, adopt scalable digital platforms, and build resilient engineering capabilities that support long-term growth. Ankit is also deeply involved in developing the company’s talent, culture, and leadership capability, building teams that combine technical depth with execution excellence.'
   },
   {
     name: 'Prateek W.',
     role: 'Co-Founder',
-    bio: 'As Co-Founder of Intelliware Global, Prateek brings extensive experience in global operations, delivery leadership, and business growth across Europe and the Middle East. He has successfully scaled professional services organisations, led complex client engagements, and built strong partnerships across enterprise and public sector markets. At Intelliware Global, he oversees Global, he oversees Global, he oversees delivery excellence, strategic partnerships, and client success, ensuring every programme is executed with consistency, quality, and measurable impact. With experience across industries including banking, insurance, and government, Prateek helps clients navigate transformation with confidence while strengthening the firm’s reputation as a trusted technology consulting partner.'
+    bio: 'As Co-Founder of Intelliware Global, Prateek brings extensive experience in global operations, delivery, and business growth across Europe and the Middle East. He has successfully scaled professional services organisations, led complex client engagements, and built strong partnerships across enterprise and public sector markets. He oversees global strategic partnerships and client success, ensuring every programme is executed with consistency, quality, and measurable impact. With experience across industries, Prateek helps clients navigate transformation with confidence while strengthening the firm’s reputation as a trusted technology consulting partner.'
   },
-  
+  {
+    name: 'Prerna',
+    role: 'HR and Talent Director',
+    bio: 'Prerna is an experienced HR and talent leader with 15+ years of experience building high-performing teams across technology and consulting environments. At Intelliware Global, she leads talent acquisition, people strategy, culture, and learning and development initiatives across the organisation. She is focused on creating a strong people-first foundation, enabling teams to grow, perform, and thrive while supporting the company’s long-term vision and delivery excellence.'
+  },
+  {
+    name: 'Divya',
+    role: 'Operations Director',
+    bio: 'Divya is a seasoned operations leader with strong experience in business operations, delivery coordination, and organisational effectiveness. At Intelliware Global, she is responsible for strengthening operational processes, improving cross-functional collaboration, and ensuring smooth execution across internal and client-facing initiatives. She plays a key role in driving operational excellence, governance, and scalable support structures that enable the company to deliver with consistency, agility, and quality.'
+  }
+
 ];
