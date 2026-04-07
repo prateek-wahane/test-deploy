@@ -68,33 +68,15 @@ export const aboutPages: AboutPage[] = [
 
 export const leadershipTeam: LeadershipMember[] = [
   {
-    name: 'Arjun Mehta',
-    role: 'Chief Executive Officer & Co-Founder',
-    bio: 'Former VP of Digital at a Big Four consulting firm with 20+ years of experience leading large-scale transformation programmes across EMEA. Arjun founded Intelliware Global with a vision to build a technology consulting firm that combines enterprise-grade delivery with founder-led accountability.',
+    name: 'Ankit A.',
+    role: 'Co-Founder',
+    bio:  'As Co-Founder of Intelliware Global, Ankit brings 15+ years of experience leading large-scale transformation initiatives across AI/ML, cloud, platform engineering, and enterprise technology. He has helped organisations modernise core systems, adopt scalable digital platforms, and build resilient engineering capabilities that support long-term growth. Ankit shapes the firm’s technology strategy, innovation agenda, and consulting methodology, ensuring Intelliware Global delivers enterprise-grade solutions with founder-led accountability. Ankit is also deeply involved in developing the company’s talent, culture, and leadership capability, building teams that combine technical depth with execution excellence.',
+    
   },
   {
-    name: 'Sarah Al-Rashid',
-    role: 'Chief Operating Officer',
-    bio: 'Seasoned operations leader with extensive experience scaling professional services organisations across the Middle East and Europe. Sarah oversees global delivery operations, ensuring consistent quality and client satisfaction across all engagements.',
+    name: 'Prateek W.',
+    role: 'Co-Founder',
+    bio: 'As Co-Founder of Intelliware Global, Prateek brings extensive experience in global operations, delivery leadership, and business growth across Europe and the Middle East. He has successfully scaled professional services organisations, led complex client engagements, and built strong partnerships across enterprise and public sector markets. At Intelliware Global, he oversees Global, he oversees Global, he oversees delivery excellence, strategic partnerships, and client success, ensuring every programme is executed with consistency, quality, and measurable impact. With experience across industries including banking, insurance, and government, Prateek helps clients navigate transformation with confidence while strengthening the firm’s reputation as a trusted technology consulting partner.'
   },
-  {
-    name: 'Dr. Marcus Weber',
-    role: 'Chief Technology Officer',
-    bio: 'Former Head of Engineering at a leading European fintech with deep expertise in cloud-native architecture, AI/ML, and platform engineering. Marcus leads Intelliware Global\'s technology strategy and innovation agenda.',
-  },
-  {
-    name: 'Priya Sharma',
-    role: 'Chief People Officer',
-    bio: 'HR leader with 15+ years of experience building high-performance technology teams. Priya is responsible for talent acquisition, culture, and learning & development across all Intelliware Global offices.',
-  },
-  {
-    name: 'James Harrington',
-    role: 'VP of Sales & Partnerships — EMEA',
-    bio: 'Enterprise sales leader with a track record of building strategic client relationships across banking, insurance, and public sector verticals in Europe and the Middle East.',
-  },
-  {
-    name: 'Fatima Al-Zahra',
-    role: 'VP of Delivery — Middle East',
-    bio: 'Delivery excellence leader with deep expertise in managing complex technology programmes for government and enterprise clients across the GCC region.',
-  },
+  
 ];
