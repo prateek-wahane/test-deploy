@@ -67,25 +67,34 @@ export const aboutPages: AboutPage[] = [
 ];
 
 export const leadershipTeam: LeadershipMember[] = [
- {
-    name: 'Ankit A.',
-    role: 'Co-Founder',
-    bio: 'As Co-Founder of Intelliware Global, Ankit brings 15+ years of experience leading large-scale transformation initiatives across AI/ML, cloud, platform engineering, and enterprise technology. He has helped organisations modernise core systems, adopt scalable digital platforms, and build resilient engineering capabilities that support long-term growth. Ankit is also deeply involved in developing the company’s talent, culture, and leadership capability, building teams that combine technical depth with execution excellence.'
+  {
+    name: 'Arjun Mehta',
+    role: 'Chief Executive Officer & Co-Founder',
+    bio: 'Former VP of Digital at a Big Four consulting firm with 20+ years of experience leading large-scale transformation programmes across EMEA. Arjun founded Intelliware Global with a vision to build a technology consulting firm that combines enterprise-grade delivery with founder-led accountability.',
   },
   {
-    name: 'Prateek W.',
-    role: 'Co-Founder',
-    bio: 'As Co-Founder of Intelliware Global, Prateek brings extensive experience in global operations, delivery, and business growth across Europe and the Middle East. He has successfully scaled professional services organisations, led complex client engagements, and built strong partnerships across enterprise and public sector markets. He oversees global strategic partnerships and client success, ensuring every programme is executed with consistency, quality, and measurable impact. With experience across industries, Prateek helps clients navigate transformation with confidence while strengthening the firm’s reputation as a trusted technology consulting partner.'
+    name: 'Sarah Al-Rashid',
+    role: 'Chief Operating Officer',
+    bio: 'Seasoned operations leader with extensive experience scaling professional services organisations across the Middle East and Europe. Sarah oversees global delivery operations, ensuring consistent quality and client satisfaction across all engagements.',
   },
   {
-    name: 'Prerna',
-    role: 'HR and Talent Director',
-    bio: 'Prerna is an experienced HR and talent leader with 15+ years of experience building high-performing teams across technology and consulting environments. At Intelliware Global, she leads talent acquisition, people strategy, culture, and learning and development initiatives across the organisation. She is focused on creating a strong people-first foundation, enabling teams to grow, perform, and thrive while supporting the company’s long-term vision and delivery excellence.'
+    name: 'Dr. Marcus Weber',
+    role: 'Chief Technology Officer',
+    bio: 'Former Head of Engineering at a leading European fintech with deep expertise in cloud-native architecture, AI/ML, and platform engineering. Marcus leads Intelliware Global\'s technology strategy and innovation agenda.',
   },
   {
-    name: 'Divya',
-    role: 'Operations Director',
-    bio: 'Divya is a seasoned operations leader with strong experience in business operations, delivery coordination, and organisational effectiveness. At Intelliware Global, she is responsible for strengthening operational processes, improving cross-functional collaboration, and ensuring smooth execution across internal and client-facing initiatives. She plays a key role in driving operational excellence, governance, and scalable support structures that enable the company to deliver with consistency, agility, and quality.'
-  }
-
+    name: 'Priya Sharma',
+    role: 'Chief People Officer',
+    bio: 'HR leader with 15+ years of experience building high-performance technology teams. Priya is responsible for talent acquisition, culture, and learning & development across all Intelliware Global offices.',
+  },
+  {
+    name: 'James Harrington',
+    role: 'VP of Sales & Partnerships — EMEA',
+    bio: 'Enterprise sales leader with a track record of building strategic client relationships across banking, insurance, and public sector verticals in Europe and the Middle East.',
+  },
+  {
+    name: 'Fatima Al-Zahra',
+    role: 'VP of Delivery — Middle East',
+    bio: 'Delivery excellence leader with deep expertise in managing complex technology programmes for government and enterprise clients across the GCC region.',
+  },
 ];
