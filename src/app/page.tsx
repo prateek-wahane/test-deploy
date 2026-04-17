@@ -5,6 +5,7 @@ import WhyIntelliware from '@/components/home/WhyIntelliware';
 import IndustriesStrip from '@/components/home/IndustriesStrip';
 import GlobalPresence from '@/components/home/GlobalPresence';
 import CTABanner from '@/components/home/CTABanner';
+import VoiceAssistant from '@/components/home/VoiceAssistant';
 
 export const metadata: Metadata = {
   title: 'Intelliware Global — Enterprise Technology Consulting & IT Outsourcing',
@@ -30,6 +31,7 @@ export default function HomePage() {
       <IndustriesStrip />
       <GlobalPresence />
       <CTABanner />
+      <VoiceAssistant />
     </>
   );
 }
