@@ -21,7 +21,8 @@ export default function PortfolioDropdown({ isOpen }: PortfolioDropdownProps) {
         >
           <div className="h-0.5 bg-gradient-to-r from-accent to-accent/30" />
           <ul className="py-2">
-            {navigation.portfolio.map((item) => (
+            {navigation.portfolio?.map((item) => (
+              !item.hidden && (
               <li key={item.href}>
                 <a
                   href={item.href}
@@ -33,6 +34,7 @@ export default function PortfolioDropdown({ isOpen }: PortfolioDropdownProps) {
                   <ExternalLink className="h-3.5 w-3.5 text-slate-400" />
                 </a>
               </li>
+              )
             ))}
           </ul>
         </motion.div>

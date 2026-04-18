@@ -9,14 +9,10 @@ let vapiInstance: Vapi | null = null;
 
 export const getVapiInstance = (): Vapi => {
   if (!vapiInstance) {
-    const publicKey =
-      process.env.NEXT_PUBLIC_VAPI_PUBLIC_KEY ||
-      process.env.NEXT_PUBLIC_VAPI_API_KEY;
-
+    const publicKey = process.env.NEXT_PUBLIC_VAPI_PUBLIC_KEY;
+    
     if (!publicKey) {
-      console.error(
-        'NEXT_PUBLIC_VAPI_PUBLIC_KEY or NEXT_PUBLIC_VAPI_API_KEY is not configured'
-      );
+      console.error('NEXT_PUBLIC_VAPI_PUBLIC_KEY is not configured');
     }
 
     vapiInstance = new Vapi(publicKey || '');

@@ -9,6 +9,7 @@ import WhoWeAreDropdown from './WhoWeAreDropdown';
 import PortfolioDropdown from './PortfolioDropdown';
 import LanguageSwitcher from './LanguageSwitcher';
 import MobileDrawer from './MobileDrawer';
+import { navigation } from '@/data/navigation';
 import { useTranslation } from '@/hooks/useTranslation';
 
 export default function Header() {
@@ -115,30 +116,38 @@ export default function Header() {
 
           <span className="h-4 w-px bg-slate-200 transition-colors duration-300" />
 
-          <div
-            className="relative"
-            onMouseEnter={openPortfolio}
-            onMouseLeave={closePortfolio}
-          >
-            <button
-              className="flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-semibold font-heading text-slate-700 hover:text-accent hover:bg-accent/5 transition-all duration-200"
-            >
-              {t('nav.portfolio')}
-              <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${portfolioOpen ? 'rotate-180' : ''}`} />
-            </button>
-            <PortfolioDropdown isOpen={portfolioOpen} />
-          </div>
+          {!navigation.portfolio?.[0]?.hidden && (
+            <>
+              <div
+                className="relative"
+                onMouseEnter={openPortfolio}
+                onMouseLeave={closePortfolio}
+              >
+                <button
+                  className="flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-semibold font-heading text-slate-700 hover:text-accent hover:bg-accent/5 transition-all duration-200"
+                >
+                  {t('nav.portfolio')}
+                  <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${portfolioOpen ? 'rotate-180' : ''}`} />
+                </button>
+                <PortfolioDropdown isOpen={portfolioOpen} />
+              </div>
 
-          <span className="h-4 w-px bg-slate-200 transition-colors duration-300" />
+              <span className="h-4 w-px bg-slate-200 transition-colors duration-300" />
+            </>
+          )}
 
-          <Link
-            href="/careers"
-            className="rounded-lg px-4 py-2 text-sm font-semibold font-heading text-slate-700 hover:text-accent hover:bg-accent/5 transition-all duration-200"
-          >
-            {t('nav.careers')}
-          </Link>
+          {!navigation.careers?.hidden && (
+            <>
+              <Link
+                href="/careers"
+                className="rounded-lg px-4 py-2 text-sm font-semibold font-heading text-slate-700 hover:text-accent hover:bg-accent/5 transition-all duration-200"
+              >
+                {t('nav.careers')}
+              </Link>
 
-          <span className="h-4 w-px bg-slate-200 transition-colors duration-300" />
+              <span className="h-4 w-px bg-slate-200 transition-colors duration-300" />
+            </>
+          )}
 
           <Link
             href="/contact"

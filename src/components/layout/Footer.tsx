@@ -13,6 +13,7 @@ import {
 import { services } from '@/data/services';
 import { industries } from '@/data/industries';
 import { offices } from '@/data/offices';
+import { navigation } from '@/data/navigation';
 import LiveClock from '@/components/ui/LiveClock';
 import Container from '@/components/ui/Container';
 import { useTranslation } from '@/hooks/useTranslation';
@@ -30,7 +31,7 @@ export default function Footer() {
 
   const quickLinks = [
     { label: t('footer.aboutUs'), href: '/about/about-us' },
-    { label: t('footer.careers'), href: '/careers' },
+    ...(navigation.careers?.hidden ? [] : [{ label: t('footer.careers'), href: '/careers' }]),
     { label: t('footer.gcc'), href: '/about/about-us' },
     { label: t('footer.contactUs'), href: '/contact' },
   ];
