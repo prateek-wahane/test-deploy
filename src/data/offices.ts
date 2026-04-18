@@ -15,13 +15,13 @@ export const offices: Office[] = [
     timezone: 'Asia/Dubai',
     timezoneLabel: 'GST (UTC+4)',
   },
-  {
+  /* {
     city: 'Bangalore',
     country: 'India',
     address: 'Embassy TechVillage, Outer Ring Road, Devarabisanahalli, Bengaluru 560103, India',
     timezone: 'Asia/Kolkata',
     timezoneLabel: 'IST (UTC+5:30)',
-  },
+  },  IGNORE */
   {
     city: 'Pune',
     country: 'India',
@@ -36,11 +36,19 @@ export const offices: Office[] = [
     timezone: 'Asia/Kolkata',
     timezoneLabel: 'IST (UTC+5:30)',
   },
-  {
+ /* {
     city: 'Mumbai',
     country: 'India',
     address: 'Bandra Kurla Complex, Bandra East, Mumbai 400051, Maharashtra, India',
     timezone: 'Asia/Kolkata',
     timezoneLabel: 'IST (UTC+5:30)',
   },
+ /* {
+    city: 'Mumbai',
+    country: 'India',
+    address: 'Bandra Kurla Complex, Bandra East, Mumbai 400051, Maharashtra, India',
+    timezone: 'Asia/Kolkata',
+    timezoneLabel: 'IST (UTC+5:30)',
+  },
+  */
 ];
