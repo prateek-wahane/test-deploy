@@ -39,6 +39,7 @@ export interface NavItem {
   label: string;
   href: string;
   external?: boolean;
+  hidden?: boolean;
 }
 
 export interface MegaMenuColumn {

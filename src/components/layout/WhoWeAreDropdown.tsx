@@ -22,6 +22,7 @@ export default function WhoWeAreDropdown({ isOpen }: WhoWeAreDropdownProps) {
           <div className="h-0.5 bg-gradient-to-r from-accent to-accent/30" />
           <ul className="py-2">
             {navigation.whoWeAre.map((item) => (
+              !item.hidden && (
               <li key={item.href}>
                 <Link
                   href={item.href}
@@ -30,6 +31,7 @@ export default function WhoWeAreDropdown({ isOpen }: WhoWeAreDropdownProps) {
                   {item.label}
                 </Link>
               </li>
+              )
             ))}
           </ul>
         </motion.div>
