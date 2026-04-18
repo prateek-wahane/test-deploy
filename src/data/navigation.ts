@@ -41,11 +41,11 @@ export const navigation: NavigationConfig = {
     { label: 'Aspiration', href: '/about/aspiration' },
     { label: 'Brand', href: '/about/brand' },
     { label: 'Values', href: '/about/values' },
-    { label: 'Leadership', href: '/about/leadership' },
+    //{ label: 'Leadership', href: '/about/leadership' },
   ],
-  portfolio: [
-    { label: 'Wipro', href: 'https://www.wipro.com', external: true },
-  ],
-  careers: { label: 'Careers', href: '/careers' },
+ // portfolio: [
+  //  { label: 'Wipro', href: 'https://www.wipro.com', external: true },
+  //],
+  //careers: { label: 'Careers', href: '/careers' },
   contact: { label: 'Contact Us', href: '/contact' },
 };
