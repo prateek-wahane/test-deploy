@@ -10,10 +10,8 @@ import { useTranslation } from '@/hooks/useTranslation';
 const locations = [
   { city: 'London', top: '28%', left: '47%', timezone: 'Europe/London', label: 'GMT/BST' },
   { city: 'Dubai', top: '45%', left: '60%', timezone: 'Asia/Dubai', label: 'GST' },
-  { city: 'Bangalore', top: '55%', left: '68%', timezone: 'Asia/Kolkata', label: 'IST' },
   { city: 'Pune', top: '50%', left: '65%', timezone: 'Asia/Kolkata', label: 'IST' },
   { city: 'Hyderabad', top: '52%', left: '67%', timezone: 'Asia/Kolkata', label: 'IST' },
-  { city: 'Mumbai', top: '49%', left: '64%', timezone: 'Asia/Kolkata', label: 'IST' },
 ];
 
 export default function GlobalPresence() {

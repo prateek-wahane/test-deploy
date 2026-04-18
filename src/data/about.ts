@@ -6,16 +6,16 @@ export const aboutPages: AboutPage[] = [
     title: 'About Intelliware Global',
     subtitle: 'Bridging human-centric values with cutting-edge digital delivery.',
     content: [
-      'Intelliware Global Consulting and Services LLP is a next-generation technology consulting firm headquartered in London, with delivery centres in Dubai and Bangalore. We partner with enterprises across Europe, the Middle East, and Africa to design, build, and operate technology solutions that drive measurable business outcomes.',
+      'Intelliware Global Consulting and Services LLP is a next-generation technology consulting firm headquartered in London, with delivery centres in Pune and Hyderabad. We partner with enterprises across Europe, the Middle East, and Africa to design, build, and operate technology solutions that drive measurable business outcomes.',
       'Founded on the belief that technology should serve people — not the other way around — we combine deep technical expertise with a relentless focus on business value. Our teams bring decades of collective experience across cloud, AI, cybersecurity, data, and enterprise platforms.',
       'We operate as a Tier 1 delivery partner, bringing the scale, governance, and domain depth of firms like TCS, Wipro, and Accenture — with the agility, innovation, and personal accountability of a founder-led organisation.',
       'Our mission is simple: empower every enterprise we serve to compete and win in the digital economy. We do this by building long-term partnerships grounded in trust, transparency, and a shared commitment to excellence.',
     ],
     highlights: [
       { label: 'Global Offices', value: '3' },
-      { label: 'EMEA Markets Served', value: '25+' },
-      { label: 'Enterprise Clients', value: '50+' },
-      { label: 'Technology Professionals', value: '500+' },
+      { label: 'EMEA Markets Served', value: '12+' },
+      { label: 'Enterprise Clients', value: '10+' },
+      { label: 'Technology Professionals', value: '100+' },
     ],
   },
   {
