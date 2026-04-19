@@ -53,6 +53,7 @@ export interface NavigationConfig {
   whoWeAre: NavItem[];
   portfolio: NavItem[];
   careers: NavItem;
+  blog: NavItem;
   contact: NavItem;
 }
 

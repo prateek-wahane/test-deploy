@@ -150,6 +150,15 @@ export default function Header() {
           )}
 
           <Link
+            href={navigation.blog.href}
+            className="rounded-lg px-4 py-2 text-sm font-semibold font-heading text-slate-700 hover:text-accent hover:bg-accent/5 transition-all duration-200"
+          >
+            {t('nav.blog')}
+          </Link>
+
+          <span className="h-4 w-px bg-slate-200 transition-colors duration-300" />
+
+          <Link
             href="/contact"
             className="rounded-lg px-4 py-2 text-sm font-semibold font-heading text-slate-700 hover:text-accent hover:bg-accent/5 transition-all duration-200"
           >

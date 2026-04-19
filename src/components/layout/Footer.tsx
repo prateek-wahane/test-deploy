@@ -128,6 +128,33 @@ export default function Footer() {
         </div>
       </Container>
 
+      <div className="border-t border-slate-200 bg-white">
+        <Container className="py-8">
+          <div className="flex flex-wrap justify-center gap-6 text-xs font-semibold">
+            <Link
+              href="/disclaimer"
+              className="text-slate-600 hover:text-accent transition-colors"
+            >
+              Disclaimer
+            </Link>
+            <span className="text-slate-300">•</span>
+            <Link
+              href="/terms-of-use"
+              className="text-slate-600 hover:text-accent transition-colors"
+            >
+              Terms of Use
+            </Link>
+            <span className="text-slate-300">•</span>
+            <Link
+              href="/customer-rights"
+              className="text-slate-600 hover:text-accent transition-colors"
+            >
+              Customer Rights & Responsibility
+            </Link>
+          </div>
+        </Container>
+      </div>
+
       <div className="border-t border-slate-200">
         <Container className="flex flex-col items-center justify-between gap-4 py-6 sm:flex-row">
           <p className="text-xs text-slate-400">

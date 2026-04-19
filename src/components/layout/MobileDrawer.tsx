@@ -190,6 +190,14 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
               )}
 
               <Link
+                href={navigation.blog.href}
+                onClick={onClose}
+                className="block rounded-md px-3 py-3 text-sm font-medium text-slate-700 hover:bg-slate-50"
+              >
+                {t('nav.blog')}
+              </Link>
+
+              <Link
                 href="/contact"
                 onClick={onClose}
                 className="block rounded-md px-3 py-3 text-sm font-medium text-slate-700 hover:bg-slate-50"

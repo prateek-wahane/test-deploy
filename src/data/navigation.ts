@@ -47,5 +47,6 @@ export const navigation: NavigationConfig = {
     { label: 'Wipro', href: 'https://www.wipro.com', external: true, hidden: true },
   ],
   careers: { label: 'Careers', href: '/careers', hidden: true },
+  blog: { label: 'Blog', href: '/blog' },
   contact: { label: 'Contact Us', href: '/contact' },
 };
