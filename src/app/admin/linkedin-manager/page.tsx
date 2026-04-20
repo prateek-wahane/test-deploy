@@ -139,25 +139,39 @@ export default function LinkedInPostManager() {
             </div>
 
             {/* Action Buttons */}
-            <div className="mb-8 flex gap-4">
-              <button
-                onClick={handlePostAll}
-                disabled={isLoading || posts.length === 0}
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 disabled:bg-slate-300 text-white font-semibold transition-colors"
-              >
-                {isLoading ? (
-                  <>
-                    <Loader className="h-5 w-5 animate-spin" />
-                    Posting...
-                  </>
-                ) : (
-                  <>
-                    <Send className="h-5 w-5" />
-                    Post All to LinkedIn
-                  </>
-                )}
-              </button>
-            </div>
+            <div className="mb-8 flex flex-wrap gap-4 items-center">
+  <a
+    href="/api/linkedin/connect"
+    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-semibold transition-colors"
+  >
+    <Linkedin className="h-5 w-5" />
+    Connect LinkedIn
+  </a>
+
+  <button
+    onClick={handlePostAll}
+    disabled={isLoading || posts.length === 0}
+    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 disabled:bg-slate-300 text-white font-semibold transition-colors"
+  >
+    {isLoading ? (
+      <>
+        <Loader className="h-5 w-5 animate-spin" />
+        Posting...
+      </>
+    ) : (
+      <>
+        <Send className="h-5 w-5" />
+        Post All to LinkedIn
+      </>
+    )}
+  </button>
+</div>
+
+<div className="mb-8 p-4 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-700">
+  1. Click <strong>Connect LinkedIn</strong><br />
+  2. Sign in with the LinkedIn account that is an admin of your company page<br />
+  3. Return to this page and click <strong>Post</strong> or <strong>Post All</strong>
+</div>
 
             {/* Blog Posts List */}
             <div className="space-y-4">
